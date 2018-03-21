@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="19B-XK-ime" userLabel="Charge Port View1" customClass="ChargePortView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-GM-ESc">
+                    <rect key="frame" x="128" y="30" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Q9J-Zh-J9M"/>
+                        <constraint firstAttribute="width" constant="64" id="TuS-5V-UPB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortAButton:" destination="19B-XK-ime" eventType="touchUpInside" id="5GZ-Nj-n10"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LoO-GM-ESc" secondAttribute="bottom" constant="30" id="9nX-QU-DgQ"/>
+                <constraint firstItem="LoO-GM-ESc" firstAttribute="top" secondItem="19B-XK-ime" secondAttribute="top" constant="30" id="Gjd-8X-2V2"/>
+                <constraint firstItem="LoO-GM-ESc" firstAttribute="centerX" secondItem="19B-XK-ime" secondAttribute="centerX" id="p58-bu-hEA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chargePortA" destination="LoO-GM-ESc" id="WOL-ag-tfh"/>
+            </connections>
+            <point key="canvasLocation" x="-658" y="-377.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="fda-Bs-DXd" userLabel="Charge Port View2" customClass="ChargePortView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-Pd-w4A">
+                    <rect key="frame" x="30" y="30" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QOE-Pd-w4A" secondAttribute="height" multiplier="1:1" id="PcD-fT-hm0"/>
+                        <constraint firstAttribute="width" constant="64" id="hsW-xL-cmI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortAButton:" destination="19B-XK-ime" eventType="touchUpInside" id="khg-aL-d3s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm0-SB-onX">
+                    <rect key="frame" x="226" y="30" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wm0-SB-onX" secondAttribute="height" multiplier="1:1" id="xCQ-2y-7iX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪2">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortBButton:" destination="19B-XK-ime" eventType="touchUpInside" id="nkZ-GG-Uo9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QOE-Pd-w4A" firstAttribute="top" secondItem="fda-Bs-DXd" secondAttribute="top" constant="30" id="5vC-89-gGN"/>
+                <constraint firstItem="wm0-SB-onX" firstAttribute="width" secondItem="QOE-Pd-w4A" secondAttribute="width" id="DQs-ZS-6M8"/>
+                <constraint firstItem="wm0-SB-onX" firstAttribute="leading" secondItem="QOE-Pd-w4A" secondAttribute="trailing" constant="8" symbolic="YES" id="FSy-Rm-Hb5"/>
+                <constraint firstItem="QOE-Pd-w4A" firstAttribute="leading" secondItem="fda-Bs-DXd" secondAttribute="leading" constant="30" id="N7l-Lh-JC0"/>
+                <constraint firstAttribute="trailing" secondItem="wm0-SB-onX" secondAttribute="trailing" constant="30" id="QIi-Zl-6zR"/>
+                <constraint firstItem="wm0-SB-onX" firstAttribute="top" secondItem="QOE-Pd-w4A" secondAttribute="top" id="v78-nZ-Q0I"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QOE-Pd-w4A" secondAttribute="bottom" constant="30" id="zh3-dl-nik"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FSy-Rm-Hb5"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="chargePortA" destination="QOE-Pd-w4A" id="dwH-aF-BVC"/>
+                <outlet property="chargePortB" destination="wm0-SB-onX" id="g4L-XD-vnt"/>
+            </connections>
+            <point key="canvasLocation" x="-658" y="-202.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="dTR-2M-peU" userLabel="Charge Port View3" customClass="ChargePortView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2V-RK-mux">
+                    <rect key="frame" x="128" y="30" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="5Pb-7s-nxK"/>
+                        <constraint firstAttribute="height" constant="64" id="vVh-4c-Ubk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪2">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortBButton:" destination="19B-XK-ime" eventType="touchUpInside" id="Fw8-9k-F8Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K51-0o-5bN">
+                    <rect key="frame" x="212" y="30" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="K51-0o-5bN" secondAttribute="height" multiplier="1:1" id="yJH-38-s64"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪3">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortCButton:" destination="19B-XK-ime" eventType="touchUpInside" id="qF9-Ov-Uzv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csz-p9-1ei">
+                    <rect key="frame" x="45" y="30" width="63" height="64"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="csz-p9-1ei" secondAttribute="height" multiplier="1:1" id="AbF-0b-F00"/>
+                        <constraint firstAttribute="width" secondItem="csz-p9-1ei" secondAttribute="height" multiplier="1:1" id="B8j-hZ-wzv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AbF-0b-F00"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="clickChargePortAButton:" destination="19B-XK-ime" eventType="touchUpInside" id="YYU-Ir-5Lw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K51-0o-5bN" firstAttribute="width" secondItem="Y2V-RK-mux" secondAttribute="width" id="1fO-NH-nW2"/>
+                <constraint firstItem="Y2V-RK-mux" firstAttribute="top" secondItem="csz-p9-1ei" secondAttribute="top" id="2aj-Fa-uqW"/>
+                <constraint firstItem="csz-p9-1ei" firstAttribute="leading" relation="lessThanOrEqual" secondItem="dTR-2M-peU" secondAttribute="leading" constant="49" id="2it-oE-cyg"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="K51-0o-5bN" secondAttribute="trailing" constant="49" id="WTs-de-dc6"/>
+                <constraint firstItem="Y2V-RK-mux" firstAttribute="width" secondItem="csz-p9-1ei" secondAttribute="width" id="Xut-Us-sXt"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y2V-RK-mux" secondAttribute="bottom" constant="30" id="YaJ-7h-McM"/>
+                <constraint firstItem="K51-0o-5bN" firstAttribute="top" secondItem="csz-p9-1ei" secondAttribute="top" id="dvW-7y-Bjg"/>
+                <constraint firstItem="Y2V-RK-mux" firstAttribute="centerX" secondItem="dTR-2M-peU" secondAttribute="centerX" id="fB8-w0-jtZ"/>
+                <constraint firstItem="Y2V-RK-mux" firstAttribute="centerY" secondItem="dTR-2M-peU" secondAttribute="centerY" id="jfJ-ZR-waF"/>
+                <constraint firstItem="csz-p9-1ei" firstAttribute="top" secondItem="dTR-2M-peU" secondAttribute="top" constant="30" id="kZ9-KY-bgP"/>
+                <constraint firstItem="K51-0o-5bN" firstAttribute="leading" secondItem="Y2V-RK-mux" secondAttribute="trailing" constant="20" id="sfM-CV-7on"/>
+                <constraint firstItem="Y2V-RK-mux" firstAttribute="leading" secondItem="csz-p9-1ei" secondAttribute="trailing" constant="20" id="tdT-x8-vQU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jfJ-ZR-waF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="chargePortA" destination="csz-p9-1ei" id="yMA-m4-mMI"/>
+                <outlet property="chargePortB" destination="Y2V-RK-mux" id="SNn-0L-cXk"/>
+                <outlet property="chargePortC" destination="K51-0o-5bN" id="7TZ-p0-gSC"/>
+            </connections>
+            <point key="canvasLocation" x="-658" y="-26.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="9BR-gM-LTw" userLabel="Charge Port View4" customClass="ChargePortView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRC-4j-Iii">
+                    <rect key="frame" x="15" y="30" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hRC-4j-Iii" secondAttribute="height" multiplier="1:1" id="XT7-4I-fuh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortAButton:" destination="19B-XK-ime" eventType="touchUpInside" id="s4m-24-uhW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbd-Tu-g8z">
+                    <rect key="frame" x="90" y="30" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gbd-Tu-g8z" secondAttribute="height" multiplier="1:1" id="uhE-Fx-kcP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪2">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortBButton:" destination="19B-XK-ime" eventType="touchUpInside" id="tCG-Ki-s5w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-D0-rVY">
+                    <rect key="frame" x="240" y="30" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ia1-D0-rVY" secondAttribute="height" multiplier="1:1" id="PCq-rC-Yl8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪4">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortDButton:" destination="19B-XK-ime" eventType="touchUpInside" id="IYE-FA-xAs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HN-0T-nSL">
+                    <rect key="frame" x="165" y="30" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8HN-0T-nSL" secondAttribute="height" multiplier="1:1" id="dXk-sy-5yY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="枪3">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChargePortCButton:" destination="19B-XK-ime" eventType="touchUpInside" id="8Sq-Qo-rMp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hRC-4j-Iii" firstAttribute="top" secondItem="9BR-gM-LTw" secondAttribute="top" constant="30" id="3Kk-GI-88Y"/>
+                <constraint firstItem="gbd-Tu-g8z" firstAttribute="leading" secondItem="hRC-4j-Iii" secondAttribute="trailing" constant="10" id="4Rx-yy-Sy5"/>
+                <constraint firstItem="gbd-Tu-g8z" firstAttribute="width" secondItem="hRC-4j-Iii" secondAttribute="width" id="8Fc-6u-UiC"/>
+                <constraint firstItem="8HN-0T-nSL" firstAttribute="width" secondItem="hRC-4j-Iii" secondAttribute="width" id="BGj-YD-BoX"/>
+                <constraint firstItem="Ia1-D0-rVY" firstAttribute="top" secondItem="hRC-4j-Iii" secondAttribute="top" id="CHD-1c-ZWo"/>
+                <constraint firstItem="Ia1-D0-rVY" firstAttribute="width" secondItem="hRC-4j-Iii" secondAttribute="width" id="DYs-fo-sU0"/>
+                <constraint firstAttribute="trailing" secondItem="Ia1-D0-rVY" secondAttribute="trailing" constant="15" id="IRF-87-V8p"/>
+                <constraint firstItem="gbd-Tu-g8z" firstAttribute="top" secondItem="hRC-4j-Iii" secondAttribute="top" id="SCu-xE-GmC"/>
+                <constraint firstItem="8HN-0T-nSL" firstAttribute="leading" secondItem="gbd-Tu-g8z" secondAttribute="trailing" constant="10" id="TrH-Io-fiL"/>
+                <constraint firstItem="hRC-4j-Iii" firstAttribute="leading" secondItem="9BR-gM-LTw" secondAttribute="leading" constant="15" id="gSF-SV-TJO"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hRC-4j-Iii" secondAttribute="bottom" constant="30" id="hN9-O9-tq8"/>
+                <constraint firstItem="8HN-0T-nSL" firstAttribute="top" secondItem="hRC-4j-Iii" secondAttribute="top" id="oek-rX-4js"/>
+                <constraint firstItem="Ia1-D0-rVY" firstAttribute="leading" secondItem="8HN-0T-nSL" secondAttribute="trailing" constant="10" id="z2f-XM-qL7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chargePortA" destination="hRC-4j-Iii" id="Tmj-OZ-5jY"/>
+                <outlet property="chargePortB" destination="gbd-Tu-g8z" id="lZr-hj-QL1"/>
+                <outlet property="chargePortC" destination="8HN-0T-nSL" id="8SL-cQ-zTI"/>
+                <outlet property="chargePortD" destination="Ia1-D0-rVY" id="LIW-80-T9E"/>
+            </connections>
+            <point key="canvasLocation" x="-658" y="150.5"/>
+        </view>
+    </objects>
+</document>

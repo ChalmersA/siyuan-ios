@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DCSelectChargeModeView">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="296"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-RY-Kh1" userLabel="pileNameView">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBA-Ld-Dah">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交流桩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEx-ev-Zj4">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="M06-dG-LHt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="charge_icon_pileName" translatesAutoresizingMaskIntoConstraints="NO" id="xrG-0G-eWO">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="klj-aO-aUb"/>
+                                <constraint firstAttribute="width" secondItem="xrG-0G-eWO" secondAttribute="height" multiplier="1:1" id="wX7-2w-02u"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="klj-aO-aUb"/>
+                                    <exclude reference="wX7-2w-02u"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电桩名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNX-fj-CJu">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="62" id="DSe-Ie-ikb"/>
+                                <constraint firstAttribute="width" constant="60" id="rRj-Wc-gTX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="rRj-Wc-gTX"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="xrG-0G-eWO" firstAttribute="leading" secondItem="fJn-RY-Kh1" secondAttribute="leading" id="2oS-zE-PCX"/>
+                        <constraint firstItem="NEx-ev-Zj4" firstAttribute="leading" secondItem="FBA-Ld-Dah" secondAttribute="trailing" constant="5" id="41A-xx-lXI"/>
+                        <constraint firstItem="NEx-ev-Zj4" firstAttribute="top" secondItem="fJn-RY-Kh1" secondAttribute="top" id="FOg-NB-JTy"/>
+                        <constraint firstAttribute="bottom" secondItem="FBA-Ld-Dah" secondAttribute="bottom" id="HuG-0w-5Ly"/>
+                        <constraint firstItem="mNX-fj-CJu" firstAttribute="leading" secondItem="xrG-0G-eWO" secondAttribute="trailing" constant="5" id="IAd-xc-kmg"/>
+                        <constraint firstAttribute="trailing" secondItem="NEx-ev-Zj4" secondAttribute="trailing" id="Y2Q-VR-Oop"/>
+                        <constraint firstAttribute="bottom" secondItem="mNX-fj-CJu" secondAttribute="bottom" id="a4t-ff-GxK"/>
+                        <constraint firstItem="mNX-fj-CJu" firstAttribute="top" secondItem="fJn-RY-Kh1" secondAttribute="top" id="aMr-QC-S84"/>
+                        <constraint firstAttribute="bottom" secondItem="NEx-ev-Zj4" secondAttribute="bottom" id="de5-20-tsX"/>
+                        <constraint firstItem="FBA-Ld-Dah" firstAttribute="top" secondItem="fJn-RY-Kh1" secondAttribute="top" id="mB8-x5-1aM"/>
+                        <constraint firstItem="mNX-fj-CJu" firstAttribute="centerY" secondItem="xrG-0G-eWO" secondAttribute="centerY" id="rpp-Qt-79h"/>
+                        <constraint firstItem="FBA-Ld-Dah" firstAttribute="leading" secondItem="mNX-fj-CJu" secondAttribute="trailing" constant="10" id="xng-qm-VsA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-ZL-D4F" userLabel="chargePortView">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电枪口" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-l1-5rc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="62" id="oMO-BR-VLr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-0A-1OZ">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charge_icon_chargePort" translatesAutoresizingMaskIntoConstraints="NO" id="PkP-rO-8F0">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Bwk-0b-onT"/>
+                                <constraint firstAttribute="width" secondItem="PkP-rO-8F0" secondAttribute="height" multiplier="1:1" id="eof-B2-GGd"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Bwk-0b-onT"/>
+                                    <exclude reference="eof-B2-GGd"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0r-XY-vV8">
+                            <color key="backgroundColor" red="0.047058823529411764" green="0.50980392156862742" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="YDZ-ee-dJp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="选择">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="changeOtherChargePortButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="scs-lC-eTs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="F0r-XY-vV8" secondAttribute="trailing" id="4R7-ZP-lsZ"/>
+                        <constraint firstItem="F0r-XY-vV8" firstAttribute="leading" secondItem="ZIh-0A-1OZ" secondAttribute="trailing" constant="5" id="I0c-Ze-agk"/>
+                        <constraint firstItem="PkP-rO-8F0" firstAttribute="top" secondItem="3Jf-ZL-D4F" secondAttribute="top" id="JF3-Ot-KcE"/>
+                        <constraint firstAttribute="bottom" secondItem="F0r-XY-vV8" secondAttribute="bottom" id="Pru-xi-saq"/>
+                        <constraint firstItem="PkP-rO-8F0" firstAttribute="leading" secondItem="3Jf-ZL-D4F" secondAttribute="leading" id="Ygk-8G-Q8D"/>
+                        <constraint firstItem="F0r-XY-vV8" firstAttribute="top" secondItem="3Jf-ZL-D4F" secondAttribute="top" id="al6-8B-fzx"/>
+                        <constraint firstItem="ZIh-0A-1OZ" firstAttribute="top" secondItem="3Jf-ZL-D4F" secondAttribute="top" id="no0-WC-bbO"/>
+                        <constraint firstItem="CvA-l1-5rc" firstAttribute="centerY" secondItem="PkP-rO-8F0" secondAttribute="centerY" id="op8-As-1Cl"/>
+                        <constraint firstAttribute="bottom" secondItem="ZIh-0A-1OZ" secondAttribute="bottom" id="wdm-0F-XhA"/>
+                        <constraint firstItem="CvA-l1-5rc" firstAttribute="leading" secondItem="PkP-rO-8F0" secondAttribute="trailing" constant="5" id="xRD-A8-N7C"/>
+                        <constraint firstAttribute="bottom" secondItem="CvA-l1-5rc" secondAttribute="bottom" id="zFB-k1-UP7"/>
+                        <constraint firstItem="CvA-l1-5rc" firstAttribute="top" secondItem="3Jf-ZL-D4F" secondAttribute="top" id="zKz-dF-Wdr"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KE-6b-5Ax" userLabel="chargeFeeView">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元/kWh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73q-1r-krV">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="82055E5F-5A96-4CF7-9421-89FEDE86CB39" translatesAutoresizingMaskIntoConstraints="NO" id="hDL-w1-dG1">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hDL-w1-dG1" secondAttribute="height" multiplier="1:1" id="di6-XV-gHx"/>
+                                <constraint firstAttribute="width" constant="30" id="p7e-GJ-xSg"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="di6-XV-gHx"/>
+                                    <exclude reference="p7e-GJ-xSg"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电单价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-99-zi7">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5d-fg-NXa">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="yW2-99-zi7" firstAttribute="leading" secondItem="hDL-w1-dG1" secondAttribute="trailing" constant="5" id="3xU-pJ-You"/>
+                        <constraint firstItem="hDL-w1-dG1" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="top" id="6kR-45-k6p"/>
+                        <constraint firstAttribute="bottom" secondItem="hDL-w1-dG1" secondAttribute="bottom" id="Iyi-4x-x7W"/>
+                        <constraint firstAttribute="bottom" secondItem="73q-1r-krV" secondAttribute="bottom" id="KrS-Lc-hIm"/>
+                        <constraint firstItem="hDL-w1-dG1" firstAttribute="leading" secondItem="2KE-6b-5Ax" secondAttribute="leading" id="LiM-4A-57b"/>
+                        <constraint firstAttribute="trailing" secondItem="73q-1r-krV" secondAttribute="trailing" id="OPw-w3-NeX"/>
+                        <constraint firstItem="yW2-99-zi7" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="top" id="V2O-Gy-VeT"/>
+                        <constraint firstAttribute="bottom" secondItem="I5d-fg-NXa" secondAttribute="bottom" id="aA7-2i-e9W"/>
+                        <constraint firstItem="73q-1r-krV" firstAttribute="leading" secondItem="I5d-fg-NXa" secondAttribute="trailing" constant="5" id="aqw-tx-pEF"/>
+                        <constraint firstItem="yW2-99-zi7" firstAttribute="centerY" secondItem="hDL-w1-dG1" secondAttribute="centerY" id="bRf-NU-RY0"/>
+                        <constraint firstAttribute="bottom" secondItem="yW2-99-zi7" secondAttribute="bottom" id="fxT-ua-Ftg"/>
+                        <constraint firstAttribute="height" constant="30" id="i2L-6o-m18"/>
+                        <constraint firstItem="73q-1r-krV" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="top" id="lmQ-Fe-D27"/>
+                        <constraint firstItem="I5d-fg-NXa" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="top" id="veb-9b-Cys"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Iyi-4x-x7W"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-cz-u82">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="7Hj-92-0T2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-oZ-40n">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="7NM-zF-iIO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T88-2Y-EG8" userLabel="chargeModeView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charge_icon_mode" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-72-8Bh">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="x8M-72-8Bh" secondAttribute="height" multiplier="1:1" id="UED-6Q-ufG"/>
+                                <constraint firstAttribute="width" constant="30" id="fR2-Dj-k1s"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="UED-6Q-ufG"/>
+                                    <exclude reference="fR2-Dj-k1s"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGR-5w-J45">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AGR-5w-J45" secondAttribute="bottom" id="4z9-En-8EB"/>
+                        <constraint firstItem="AGR-5w-J45" firstAttribute="centerY" secondItem="x8M-72-8Bh" secondAttribute="centerY" id="Kgk-rq-nfm"/>
+                        <constraint firstItem="AGR-5w-J45" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="top" id="NAY-v9-v7P"/>
+                        <constraint firstItem="x8M-72-8Bh" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="top" id="R0Y-vl-Rnm"/>
+                        <constraint firstItem="x8M-72-8Bh" firstAttribute="leading" secondItem="T88-2Y-EG8" secondAttribute="leading" id="S5Z-U7-LJq"/>
+                        <constraint firstAttribute="height" constant="30" id="Tak-nw-wTq"/>
+                        <constraint firstAttribute="bottom" secondItem="x8M-72-8Bh" secondAttribute="bottom" id="fp3-MR-GrZ"/>
+                        <constraint firstItem="AGR-5w-J45" firstAttribute="leading" secondItem="x8M-72-8Bh" secondAttribute="trailing" constant="5" id="zFC-tE-Du2"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fp3-MR-GrZ"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s6-ID-uk0">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2s6-ID-uk0" secondAttribute="height" multiplier="1:1" id="7TI-8e-ckd"/>
+                        <constraint firstAttribute="height" constant="50" id="Dyv-IH-dFi"/>
+                        <constraint firstAttribute="width" constant="50" id="e1d-sI-ChE"/>
+                    </constraints>
+                    <state key="normal" image="charge_mode_full">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Dyv-IH-dFi"/>
+                            <exclude reference="e1d-sI-ChE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="chargeByFullButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="bjP-Ho-BV8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDJ-Hn-Nbe">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TDJ-Hn-Nbe" secondAttribute="height" multiplier="1:1" id="Wdz-o1-CxM"/>
+                    </constraints>
+                    <state key="normal" image="charge_mode_money">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chargeByMoneyButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="0cR-NZ-nXW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v9-FY-Wbm">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8v9-FY-Wbm" secondAttribute="height" multiplier="1:1" id="DA3-2b-8Sb"/>
+                    </constraints>
+                    <state key="normal" image="charge_mode_time">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chargeByTimeButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="mgg-t3-kOG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAz-Aj-aPo">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WAz-Aj-aPo" secondAttribute="height" multiplier="1:1" id="oVe-mk-3xz"/>
+                    </constraints>
+                    <state key="normal" image="charge_mode_power">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chargeByPowerButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="7g8-c7-v5P"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9s-TV-VDC" userLabel="chargeModeView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charge_floor_lock" translatesAutoresizingMaskIntoConstraints="NO" id="tk1-Zs-jb3">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="tk1-Zs-jb3" secondAttribute="height" multiplier="1:1" id="LlN-Oz-zLI"/>
+                                <constraint firstAttribute="width" constant="30" id="l94-4E-Geu"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="LlN-Oz-zLI"/>
+                                    <exclude reference="l94-4E-Geu"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地锁控制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-FJ-uMT">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovZ-3v-rGY">
+                            <color key="backgroundColor" red="0.11764705926179886" green="0.18431372940540314" blue="0.36862745881080627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="下降">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickTheLockButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="tdp-xt-5iH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cmc-FJ-uMT" firstAttribute="leading" secondItem="tk1-Zs-jb3" secondAttribute="trailing" constant="5" id="9hN-yF-uMs"/>
+                        <constraint firstAttribute="trailing" secondItem="ovZ-3v-rGY" secondAttribute="trailing" id="AxI-s9-kSh"/>
+                        <constraint firstAttribute="bottom" secondItem="tk1-Zs-jb3" secondAttribute="bottom" id="DDx-K0-50o"/>
+                        <constraint firstItem="tk1-Zs-jb3" firstAttribute="leading" secondItem="B9s-TV-VDC" secondAttribute="leading" id="E3h-5D-oAE"/>
+                        <constraint firstItem="ovZ-3v-rGY" firstAttribute="top" secondItem="B9s-TV-VDC" secondAttribute="top" id="ILq-re-DVN"/>
+                        <constraint firstAttribute="bottom" secondItem="cmc-FJ-uMT" secondAttribute="bottom" id="M2q-s5-pkO"/>
+                        <constraint firstAttribute="bottom" secondItem="ovZ-3v-rGY" secondAttribute="bottom" id="O4j-Mf-riD"/>
+                        <constraint firstItem="tk1-Zs-jb3" firstAttribute="top" secondItem="B9s-TV-VDC" secondAttribute="top" id="XKE-Rh-NHL"/>
+                        <constraint firstAttribute="height" id="hag-t9-VXL"/>
+                        <constraint firstItem="cmc-FJ-uMT" firstAttribute="top" secondItem="B9s-TV-VDC" secondAttribute="top" id="tMh-Sf-uf3"/>
+                        <constraint firstItem="cmc-FJ-uMT" firstAttribute="centerY" secondItem="tk1-Zs-jb3" secondAttribute="centerY" id="yOP-J4-5OP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DDx-K0-50o"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="T88-2Y-EG8" firstAttribute="leading" secondItem="J4y-oZ-40n" secondAttribute="leading" id="1dN-ZF-kvM"/>
+                <constraint firstItem="WAz-Aj-aPo" firstAttribute="width" secondItem="TDJ-Hn-Nbe" secondAttribute="width" id="5GN-Ay-FQv"/>
+                <constraint firstItem="ovZ-3v-rGY" firstAttribute="leading" secondItem="F0r-XY-vV8" secondAttribute="leading" id="6H4-a3-jCa"/>
+                <constraint firstItem="3Jf-ZL-D4F" firstAttribute="trailing" secondItem="fJn-RY-Kh1" secondAttribute="trailing" id="7Ib-SF-sFg"/>
+                <constraint firstItem="2KE-6b-5Ax" firstAttribute="top" secondItem="3Jf-ZL-D4F" secondAttribute="bottom" constant="15" id="DqB-qc-aGa"/>
+                <constraint firstItem="B9s-TV-VDC" firstAttribute="trailing" secondItem="dd9-cz-u82" secondAttribute="trailing" id="Dzt-dJ-EEU"/>
+                <constraint firstItem="3Jf-ZL-D4F" firstAttribute="top" secondItem="fJn-RY-Kh1" secondAttribute="bottom" constant="15" id="G9L-px-CS2"/>
+                <constraint firstItem="2s6-ID-uk0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="HIu-iU-AD9"/>
+                <constraint firstItem="B9s-TV-VDC" firstAttribute="top" secondItem="dd9-cz-u82" secondAttribute="bottom" constant="-1" id="Lcj-vw-EOo"/>
+                <constraint firstItem="TDJ-Hn-Nbe" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="bottom" constant="10" id="NDm-FX-X6y"/>
+                <constraint firstItem="J4y-oZ-40n" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="bottom" constant="18" id="NO2-K5-bEX"/>
+                <constraint firstItem="TDJ-Hn-Nbe" firstAttribute="leading" secondItem="8v9-FY-Wbm" secondAttribute="trailing" constant="15" id="OWw-lt-iDR"/>
+                <constraint firstItem="dd9-cz-u82" firstAttribute="top" secondItem="2KE-6b-5Ax" secondAttribute="bottom" constant="15" id="OwM-iJ-IlQ"/>
+                <constraint firstItem="dd9-cz-u82" firstAttribute="leading" secondItem="2KE-6b-5Ax" secondAttribute="leading" id="Q2g-Za-ye5"/>
+                <constraint firstItem="3Jf-ZL-D4F" firstAttribute="height" secondItem="fJn-RY-Kh1" secondAttribute="height" id="Q8x-rx-hn3"/>
+                <constraint firstItem="WAz-Aj-aPo" firstAttribute="leading" secondItem="TDJ-Hn-Nbe" secondAttribute="trailing" constant="15" id="QEe-mk-mKU"/>
+                <constraint firstAttribute="trailing" secondItem="WAz-Aj-aPo" secondAttribute="trailing" constant="10" id="RIH-tl-Ucp"/>
+                <constraint firstItem="T88-2Y-EG8" firstAttribute="top" secondItem="J4y-oZ-40n" secondAttribute="bottom" constant="18" id="SQh-bh-BFM"/>
+                <constraint firstItem="fJn-RY-Kh1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="T3e-SG-nRx"/>
+                <constraint firstItem="2KE-6b-5Ax" firstAttribute="leading" secondItem="3Jf-ZL-D4F" secondAttribute="leading" id="Txh-LZ-JHH"/>
+                <constraint firstItem="2s6-ID-uk0" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="bottom" constant="10" id="WJl-NR-1DP"/>
+                <constraint firstItem="fJn-RY-Kh1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="aw9-TX-tEs"/>
+                <constraint firstItem="8v9-FY-Wbm" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="bottom" constant="10" id="bWK-rZ-X2L"/>
+                <constraint firstItem="WAz-Aj-aPo" firstAttribute="top" secondItem="T88-2Y-EG8" secondAttribute="bottom" constant="10" id="c4J-4N-lYR"/>
+                <constraint firstItem="8v9-FY-Wbm" firstAttribute="leading" secondItem="2s6-ID-uk0" secondAttribute="trailing" constant="15" id="cd1-yU-Dle"/>
+                <constraint firstItem="dd9-cz-u82" firstAttribute="trailing" secondItem="2KE-6b-5Ax" secondAttribute="trailing" id="dxb-R0-deh"/>
+                <constraint firstItem="ovZ-3v-rGY" firstAttribute="trailing" secondItem="F0r-XY-vV8" secondAttribute="trailing" id="edj-19-H9c"/>
+                <constraint firstItem="T88-2Y-EG8" firstAttribute="trailing" secondItem="J4y-oZ-40n" secondAttribute="trailing" id="fUb-u6-Rs9"/>
+                <constraint firstAttribute="trailing" secondItem="fJn-RY-Kh1" secondAttribute="trailing" constant="10" id="glW-if-bLb"/>
+                <constraint firstItem="B9s-TV-VDC" firstAttribute="leading" secondItem="dd9-cz-u82" secondAttribute="leading" id="lyK-2y-0xu"/>
+                <constraint firstItem="2KE-6b-5Ax" firstAttribute="height" secondItem="3Jf-ZL-D4F" secondAttribute="height" id="mGA-he-YZA"/>
+                <constraint firstItem="J4y-oZ-40n" firstAttribute="leading" secondItem="2KE-6b-5Ax" secondAttribute="leading" id="mwx-nm-Ghc"/>
+                <constraint firstItem="TDJ-Hn-Nbe" firstAttribute="width" secondItem="8v9-FY-Wbm" secondAttribute="width" id="oCt-Rw-NRl"/>
+                <constraint firstItem="3Jf-ZL-D4F" firstAttribute="leading" secondItem="fJn-RY-Kh1" secondAttribute="leading" id="qzv-vl-Kdj"/>
+                <constraint firstItem="J4y-oZ-40n" firstAttribute="trailing" secondItem="2KE-6b-5Ax" secondAttribute="trailing" id="rqq-BP-g2i"/>
+                <constraint firstItem="J4y-oZ-40n" firstAttribute="top" secondItem="B9s-TV-VDC" secondAttribute="bottom" constant="-1" id="tKI-kE-WS2"/>
+                <constraint firstItem="8v9-FY-Wbm" firstAttribute="width" secondItem="2s6-ID-uk0" secondAttribute="width" id="usU-Hw-Hrd"/>
+                <constraint firstItem="2KE-6b-5Ax" firstAttribute="trailing" secondItem="3Jf-ZL-D4F" secondAttribute="trailing" id="whW-QE-Vy0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NO2-K5-bEX"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="changeChargePortButton" destination="F0r-XY-vV8" id="0tn-Oj-k1h"/>
+                <outlet property="chargeFeeLabel" destination="I5d-fg-NXa" id="LdX-Y2-Myk"/>
+                <outlet property="chargePortNameLabel" destination="ZIh-0A-1OZ" id="6c4-oJ-QqT"/>
+                <outlet property="fullButton" destination="2s6-ID-uk0" id="X2d-EP-iuF"/>
+                <outlet property="lockButton" destination="ovZ-3v-rGY" id="5pX-1O-Kct"/>
+                <outlet property="moneyButton" destination="TDJ-Hn-Nbe" id="QiH-Uu-09Q"/>
+                <outlet property="pileNameLabel" destination="FBA-Ld-Dah" id="rBq-56-bHw"/>
+                <outlet property="pileTypeLabel" destination="NEx-ev-Zj4" id="KYd-7z-uDm"/>
+                <outlet property="powerButton" destination="WAz-Aj-aPo" id="ppN-Bw-Rof"/>
+                <outlet property="timeButton" destination="8v9-FY-Wbm" id="QqE-Ij-2d7"/>
+            </connections>
+            <point key="canvasLocation" x="296.5" y="-54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="82055E5F-5A96-4CF7-9421-89FEDE86CB39" width="15" height="15"/>
+        <image name="charge_floor_lock" width="15" height="15"/>
+        <image name="charge_icon_chargePort" width="15" height="15"/>
+        <image name="charge_icon_mode" width="15" height="15"/>
+        <image name="charge_icon_pileName" width="15" height="15"/>
+        <image name="charge_mode_full" width="58" height="58"/>
+        <image name="charge_mode_money" width="58" height="58"/>
+        <image name="charge_mode_power" width="58" height="58"/>
+        <image name="charge_mode_time" width="58" height="58"/>
+    </resources>
+</document>

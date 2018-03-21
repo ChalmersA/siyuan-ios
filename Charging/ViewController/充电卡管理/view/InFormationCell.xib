@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="InFormationCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-YD-Ngo">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_icon_card" translatesAutoresizingMaskIntoConstraints="NO" id="Nrh-Ac-M0W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="LIY-ib-sh7"/>
+                                    <constraint firstAttribute="width" constant="25" id="Ydr-mj-qz1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAG-0g-5W2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.22352941176470587" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSO-Ar-wnE">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-Hl-W2e">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FnM-Uf-W6u"/>
+                                    <constraint firstAttribute="width" constant="30" id="vqh-rg-cSu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="垃圾桶"/>
+                                <connections>
+                                    <action selector="deletedButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FsS-Dq-rlA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70588235294117641" green="0.87058823529411766" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nrh-Ac-M0W" firstAttribute="leading" secondItem="vVI-YD-Ngo" secondAttribute="leading" constant="15" id="JrS-dO-b5j"/>
+                            <constraint firstItem="gwl-Hl-W2e" firstAttribute="centerY" secondItem="vVI-YD-Ngo" secondAttribute="centerY" id="LXc-Nz-cCJ"/>
+                            <constraint firstItem="JSO-Ar-wnE" firstAttribute="top" secondItem="Nrh-Ac-M0W" secondAttribute="bottom" constant="10" id="Lgy-zc-145"/>
+                            <constraint firstItem="hAG-0g-5W2" firstAttribute="leading" secondItem="Nrh-Ac-M0W" secondAttribute="trailing" constant="8" id="c0g-WF-xfg"/>
+                            <constraint firstAttribute="trailing" secondItem="gwl-Hl-W2e" secondAttribute="trailing" constant="15" id="dU4-xU-6ro"/>
+                            <constraint firstItem="JSO-Ar-wnE" firstAttribute="leading" secondItem="Nrh-Ac-M0W" secondAttribute="leading" id="e8v-t9-dXH"/>
+                            <constraint firstItem="Nrh-Ac-M0W" firstAttribute="top" secondItem="vVI-YD-Ngo" secondAttribute="top" constant="15" id="gKO-OB-DLa"/>
+                            <constraint firstItem="hAG-0g-5W2" firstAttribute="centerY" secondItem="Nrh-Ac-M0W" secondAttribute="centerY" id="yaG-qk-xUH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vVI-YD-Ngo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Dvf-cw-Oz4"/>
+                    <constraint firstAttribute="trailing" secondItem="vVI-YD-Ngo" secondAttribute="trailing" constant="15" id="MmY-kv-Vnw"/>
+                    <constraint firstAttribute="bottom" secondItem="vVI-YD-Ngo" secondAttribute="bottom" constant="10" id="qn9-pV-kHp"/>
+                    <constraint firstItem="vVI-YD-Ngo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xmc-zB-xiy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blueView" destination="vVI-YD-Ngo" id="JkN-bo-SEu"/>
+                <outlet property="cardNumLb" destination="JSO-Ar-wnE" id="Bug-56-nfr"/>
+            </connections>
+            <point key="canvasLocation" x="-77.5" y="209"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menu_icon_card" width="23" height="23"/>
+        <image name="垃圾桶" width="15" height="15"/>
+    </resources>
+</document>

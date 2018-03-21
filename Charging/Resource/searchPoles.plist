@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>三优电桩A</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛大厦</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩B</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 11:00-21:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩C</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 12:00-22:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛南塔</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>三优电桩</string>
+		<key>image</key>
+		<string></string>
+		<key>shareTime</key>
+		<string>2014/12/25 10:00-20:00</string>
+		<key>address</key>
+		<string>广州市越秀区先烈中路102号华盛北塔2501</string>
+		<key>rating</key>
+		<integer>5</integer>
+	</dict>
+</array>
+</plist>

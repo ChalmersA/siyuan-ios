@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BluetoothCell" id="KGk-i7-Jjw" customClass="DCBleListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_next" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-ms-u3M">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="Lqo-5N-Ft3"/>
+                            <constraint firstAttribute="height" constant="16" id="zLQ-dB-kb6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="未匹配" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-zm-hbV">
+                        <frame key="frameInset" minX="254" minY="13" width="42" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="w08-lU-jFU"/>
+                            <constraint firstAttribute="height" constant="21" id="ykb-Vs-sTO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="w08-lU-jFU"/>
+                                <exclude reference="ykb-Vs-sTO"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="HSSY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4b-b7-KqJ">
+                        <frame key="frameInset" minX="8" minY="12" width="238" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="pap-VJ-0E1"/>
+                            <constraint firstAttribute="height" constant="21" id="vff-CS-NRF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pap-VJ-0E1"/>
+                                <exclude reference="vff-CS-NRF"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="6IR-ms-u3M" secondAttribute="centerY" id="3bf-9P-6Fq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6IR-ms-u3M" secondAttribute="trailing" id="6s9-8S-svf"/>
+                    <constraint firstAttribute="centerY" secondItem="f4b-b7-KqJ" secondAttribute="centerY" id="81A-Gs-LoS"/>
+                    <constraint firstItem="ThN-zm-hbV" firstAttribute="leading" secondItem="f4b-b7-KqJ" secondAttribute="trailing" constant="8" id="hQZ-8H-tuk"/>
+                    <constraint firstAttribute="trailing" secondItem="6IR-ms-u3M" secondAttribute="trailing" constant="8" id="lM7-Nl-btV"/>
+                    <constraint firstAttribute="centerY" secondItem="ThN-zm-hbV" secondAttribute="centerY" id="nbl-Nl-mmS"/>
+                    <constraint firstItem="6IR-ms-u3M" firstAttribute="leading" secondItem="ThN-zm-hbV" secondAttribute="trailing" id="r4v-w5-RSS"/>
+                    <constraint firstItem="f4b-b7-KqJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sI2-94-N8o"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6s9-8S-svf"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bleNameLabel" destination="f4b-b7-KqJ" id="3dZ-nE-2N9"/>
+                <outlet property="matchingLabel" destination="ThN-zm-hbV" id="2ry-B8-hEW"/>
+            </connections>
+            <point key="canvasLocation" x="483" y="379"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_next" width="15" height="15"/>
+    </resources>
+</document>

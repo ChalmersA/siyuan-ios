@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="BackGroundView" customClass="DCUseCoinPayDoneInfo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIR-1H-ODO">
+                    <frame key="frameInset" minX="160" minY="210" width="280" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KQ-CD-SlW">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="支付提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-ok-lKl">
+                                    <frame key="frameInset" minX="106" minY="9" width="68" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.70588237047195435" blue="0.68235296010971069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Ic6-ok-lKl" firstAttribute="centerX" secondItem="5KQ-CD-SlW" secondAttribute="centerX" id="GVT-Za-rCT"/>
+                                <constraint firstAttribute="height" constant="40" id="GyA-Fk-zh2"/>
+                                <constraint firstItem="Ic6-ok-lKl" firstAttribute="centerY" secondItem="5KQ-CD-SlW" secondAttribute="centerY" id="xGi-t5-XqT"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="充电币支付已成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eY2-Uj-3VX">
+                            <frame key="frameInset" minX="64" minY="75" width="152" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="正在进入第三方支付页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35n-ql-Jbc">
+                            <frame key="frameInset" minX="80" minY="103" width="121" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5KQ-CD-SlW" secondAttribute="trailing" id="HHw-aC-uy3"/>
+                        <constraint firstItem="5KQ-CD-SlW" firstAttribute="top" secondItem="KIR-1H-ODO" secondAttribute="top" id="N5h-kV-0tn"/>
+                        <constraint firstItem="eY2-Uj-3VX" firstAttribute="top" secondItem="5KQ-CD-SlW" secondAttribute="bottom" constant="35" id="VzF-E1-8ll"/>
+                        <constraint firstItem="35n-ql-Jbc" firstAttribute="centerX" secondItem="KIR-1H-ODO" secondAttribute="centerX" id="WMm-cb-NqQ"/>
+                        <constraint firstAttribute="height" constant="180" id="dZz-H9-EOQ"/>
+                        <constraint firstItem="35n-ql-Jbc" firstAttribute="top" secondItem="eY2-Uj-3VX" secondAttribute="bottom" constant="5" id="f0L-TY-1gj"/>
+                        <constraint firstItem="eY2-Uj-3VX" firstAttribute="centerX" secondItem="KIR-1H-ODO" secondAttribute="centerX" id="g7Q-5B-aLn"/>
+                        <constraint firstItem="5KQ-CD-SlW" firstAttribute="leading" secondItem="KIR-1H-ODO" secondAttribute="leading" id="mdn-2g-hrC"/>
+                        <constraint firstAttribute="width" constant="280" id="vLT-uU-vuH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KIR-1H-ODO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HX5-oH-7gV"/>
+                <constraint firstItem="KIR-1H-ODO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vuq-kt-ZJI"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

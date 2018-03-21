@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Charging
+//
+//  Created by xpg on 14/12/19.
+//  Copyright (c) 2014年 xpg. All rights reserved.
+//
+
+#ifndef Charging_PrefixHeader_pch
+#define Charging_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "CocoaLumberjack.h"
+#import "AppDelegate.h"
+#import "DCCommon.h"
+
+#import "DCSiteApi.h"
+#import "GlobalConstants.h"
+#import "LinkedArray.h"
+#import "NSData+HSSY.h"
+#import "NSString+HSSY.h"
+#import "NSAttributedString+DC.h"
+#import "NSObject+AutoDescription.h"
+#import "NSObject+CleanDescription.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "DCHTTPSessionManager.h"
+#import "DCApp.h"
+#import "UIViewController+HSSYExtensions.h"
+#import "MJExtension.h"
+#import "EmptyView.h"
+#import "NSDateFormatter+HSSYCategory.h"
+
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define KSW [UIScreen mainScreen].bounds.size.width
+#define KSH [UIScreen mainScreen].bounds.size.height
+#define XXViewH(size) size/750.0 * KSH
+#define XXViewW(size) size/375.0 * KSW
+#define SizeScale (KSW != 414 ? 1 : 1.2)
+#define kFont(value) [UIFont systemFontOfSize:value * SizeScale]
+#endif

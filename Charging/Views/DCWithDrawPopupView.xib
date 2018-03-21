@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5AW-kM-cxq" customClass="DCWithDrawPopupView">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-H5-yoh">
+                    <rect key="frame" x="131" y="25" width="59" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUH-4R-0Qv">
+                    <rect key="frame" x="20" y="72" width="281" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.079999998211860657" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="QEG-Hh-L6m"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了保护您账号的安全，请您输入登录密码验证身份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9jf-V5-aae">
+                    <rect key="frame" x="20" y="83" width="281" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-kg-lNC">
+                    <rect key="frame" x="20" y="111" width="281" height="44"/>
+                    <color key="backgroundColor" red="0.90588235855102539" green="0.90588235855102539" blue="0.90588235855102539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IYH-K4-jg1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4or-nh-hWf">
+                    <rect key="frame" x="20" y="165" width="281" height="44"/>
+                    <color key="backgroundColor" red="0.047058823529411764" green="0.50980392156862742" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="B1b-2C-KaP"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButton:" destination="5AW-kM-cxq" eventType="touchUpInside" id="yoW-Uf-qWI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4or-nh-hWf" firstAttribute="trailing" secondItem="0ge-kg-lNC" secondAttribute="trailing" id="AAm-TP-PHG"/>
+                <constraint firstItem="TUH-4R-0Qv" firstAttribute="top" secondItem="xBD-H5-yoh" secondAttribute="bottom" constant="5" id="GDY-Zt-AO0"/>
+                <constraint firstItem="xBD-H5-yoh" firstAttribute="centerX" secondItem="5AW-kM-cxq" secondAttribute="centerX" id="HpH-vx-2a4"/>
+                <constraint firstItem="9jf-V5-aae" firstAttribute="top" secondItem="TUH-4R-0Qv" secondAttribute="bottom" constant="10" id="InS-4R-KSY"/>
+                <constraint firstItem="TUH-4R-0Qv" firstAttribute="leading" secondItem="5AW-kM-cxq" secondAttribute="leading" constant="20" id="KPM-p3-Pg8"/>
+                <constraint firstItem="0ge-kg-lNC" firstAttribute="leading" secondItem="9jf-V5-aae" secondAttribute="leading" id="Kmv-MG-bBp"/>
+                <constraint firstItem="0ge-kg-lNC" firstAttribute="top" secondItem="9jf-V5-aae" secondAttribute="bottom" constant="10" id="Sue-NL-Xpu"/>
+                <constraint firstItem="4or-nh-hWf" firstAttribute="top" secondItem="0ge-kg-lNC" secondAttribute="bottom" constant="10" id="VL5-qg-Z9j"/>
+                <constraint firstItem="xBD-H5-yoh" firstAttribute="top" secondItem="5AW-kM-cxq" secondAttribute="top" constant="25" id="ZvB-iJ-u9Q"/>
+                <constraint firstItem="4or-nh-hWf" firstAttribute="leading" secondItem="0ge-kg-lNC" secondAttribute="leading" id="dIv-Id-uI4"/>
+                <constraint firstAttribute="trailing" secondItem="TUH-4R-0Qv" secondAttribute="trailing" constant="20" id="enH-qv-L5R"/>
+                <constraint firstItem="9jf-V5-aae" firstAttribute="leading" secondItem="TUH-4R-0Qv" secondAttribute="leading" id="gao-zJ-8IO"/>
+                <constraint firstItem="0ge-kg-lNC" firstAttribute="trailing" secondItem="9jf-V5-aae" secondAttribute="trailing" id="iHc-oK-T74"/>
+                <constraint firstItem="9jf-V5-aae" firstAttribute="trailing" secondItem="TUH-4R-0Qv" secondAttribute="trailing" id="lNk-nk-hUo"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4or-nh-hWf" secondAttribute="bottom" priority="750" constant="10" id="p1C-km-xv3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="4or-nh-hWf" id="fDx-5P-Ijj"/>
+                <outlet property="passWordTextField" destination="0ge-kg-lNC" id="xnp-yw-QAh"/>
+                <outlet property="withDrawLabel" destination="xBD-H5-yoh" id="fRj-cs-V7z"/>
+            </connections>
+            <point key="canvasLocation" x="133.5" y="79.5"/>
+        </view>
+    </objects>
+</document>

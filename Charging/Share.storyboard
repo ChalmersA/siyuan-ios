@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SKY-VB-DeR">
+            <objects>
+                <navigationController id="h9U-8D-FRa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VxF-0S-kei">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fVS-qL-0Ta" kind="relationship" relationship="rootViewController" id="ryH-XY-ZD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8x-dA-Orj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="382"/>
+        </scene>
+        <!--分享充电点-->
+        <scene sceneID="tl8-9Y-r9D">
+            <objects>
+                <viewController storyboardIdentifier="shareVC" id="fVS-qL-0Ta" customClass="DCShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fYX-RC-bdI"/>
+                        <viewControllerLayoutGuide type="bottom" id="0VL-Hh-lNU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMB-y2-POh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0M-tL-FBC">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-Y5-VxT"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FW7-en-RPc" customClass="BMKMapView">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="13:10" id="Ftm-J6-Zbh"/>
+                                            <constraint firstAttribute="height" constant="200" id="Pjo-dW-wWC"/>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="27:10" id="VHz-Pt-0sH"/>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="15:8" id="VaK-I1-yNZ"/>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="27:18" id="dGE-vp-Hsd"/>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="1:1" id="ucz-Bx-4vA"/>
+                                            <constraint firstAttribute="width" secondItem="FW7-en-RPc" secondAttribute="height" multiplier="27:10" id="w41-pz-dHn"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ftm-J6-Zbh"/>
+                                                <exclude reference="Pjo-dW-wWC"/>
+                                                <exclude reference="VHz-Pt-0sH"/>
+                                                <exclude reference="VaK-I1-yNZ"/>
+                                                <exclude reference="ucz-Bx-4vA"/>
+                                                <exclude reference="w41-pz-dHn"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkG-HN-Mzm">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三优电桩" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJF-FT-TTM">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="IQZ-a1-Dq4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="IQZ-a1-Dq4"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三优电桩三优电桩三优电桩三优电桩三优电桩三优电桩三优电桩" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-HT-wos">
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_pile_image_short" translatesAutoresizingMaskIntoConstraints="NO" id="syg-u0-Yd9">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="CyM-hd-lAu"/>
+                                                    <constraint firstAttribute="width" constant="80" id="D0q-V7-dNA"/>
+                                                    <constraint firstAttribute="width" secondItem="syg-u0-Yd9" secondAttribute="height" id="vDc-HB-3MY"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="CyM-hd-lAu"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市天河区花城大道-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-Nr-qo0">
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTY-nh-4Jr" userLabel="直流交流view" customClass="FiveStarsView" customModule="Charging" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FTY-nh-4Jr" secondAttribute="height" multiplier="43:4" id="feB-vj-6Vb"/>
+                                                    <constraint firstAttribute="width" constant="100" id="hLn-C2-5qf"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="feB-vj-6Vb"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="FTY-nh-4Jr" firstAttribute="leading" secondItem="syg-u0-Yd9" secondAttribute="trailing" constant="8" id="3rf-xj-tSa"/>
+                                            <constraint firstItem="JJF-FT-TTM" firstAttribute="top" secondItem="GkG-HN-Mzm" secondAttribute="top" constant="10" id="448-jB-4Ml"/>
+                                            <constraint firstItem="FTY-nh-4Jr" firstAttribute="height" secondItem="VBa-HT-wos" secondAttribute="height" id="D7P-ou-F5E"/>
+                                            <constraint firstItem="VBa-HT-wos" firstAttribute="leading" secondItem="syg-u0-Yd9" secondAttribute="trailing" constant="8" id="FdX-8d-WhB"/>
+                                            <constraint firstAttribute="trailing" secondItem="FTY-nh-4Jr" secondAttribute="trailing" id="Gft-vB-Jk4"/>
+                                            <constraint firstAttribute="trailing" secondItem="JJF-FT-TTM" secondAttribute="trailing" id="Hzv-Wo-U1I"/>
+                                            <constraint firstItem="FTY-nh-4Jr" firstAttribute="height" secondItem="VBa-HT-wos" secondAttribute="height" id="Mdk-uJ-66U"/>
+                                            <constraint firstAttribute="bottom" secondItem="syg-u0-Yd9" secondAttribute="bottom" constant="10" id="PK9-71-437"/>
+                                            <constraint firstItem="fUf-Nr-qo0" firstAttribute="leading" secondItem="syg-u0-Yd9" secondAttribute="trailing" constant="8" id="Qwh-a2-TME"/>
+                                            <constraint firstItem="fUf-Nr-qo0" firstAttribute="height" secondItem="VBa-HT-wos" secondAttribute="height" id="Tvk-pk-G1g"/>
+                                            <constraint firstAttribute="trailing" secondItem="VBa-HT-wos" secondAttribute="trailing" id="f0D-lf-TwD"/>
+                                            <constraint firstItem="fUf-Nr-qo0" firstAttribute="top" secondItem="VBa-HT-wos" secondAttribute="bottom" constant="5" id="lQe-3f-T9z"/>
+                                            <constraint firstItem="fUf-Nr-qo0" firstAttribute="top" secondItem="FTY-nh-4Jr" secondAttribute="bottom" constant="1" id="lTc-r6-Shr"/>
+                                            <constraint firstItem="syg-u0-Yd9" firstAttribute="top" secondItem="GkG-HN-Mzm" secondAttribute="top" constant="10" id="lgm-Tm-5uW"/>
+                                            <constraint firstAttribute="trailing" secondItem="fUf-Nr-qo0" secondAttribute="trailing" id="mp5-X8-6fu"/>
+                                            <constraint firstItem="VBa-HT-wos" firstAttribute="top" secondItem="JJF-FT-TTM" secondAttribute="bottom" constant="5" id="pZM-St-6G0"/>
+                                            <constraint firstItem="JJF-FT-TTM" firstAttribute="leading" secondItem="syg-u0-Yd9" secondAttribute="trailing" constant="8" id="pqP-wG-Qgv"/>
+                                            <constraint firstItem="syg-u0-Yd9" firstAttribute="leading" secondItem="GkG-HN-Mzm" secondAttribute="leading" id="rCr-nd-tby"/>
+                                            <constraint firstAttribute="bottom" secondItem="fUf-Nr-qo0" secondAttribute="bottom" constant="10" id="tDq-lh-Kfs"/>
+                                            <constraint firstItem="FTY-nh-4Jr" firstAttribute="top" secondItem="VBa-HT-wos" secondAttribute="bottom" constant="5" id="utC-FF-rcl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Gft-vB-Jk4"/>
+                                                <exclude reference="Mdk-uJ-66U"/>
+                                                <exclude reference="utC-FF-rcl"/>
+                                                <exclude reference="lQe-3f-T9z"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GkG-HN-Mzm" firstAttribute="leading" secondItem="FW7-en-RPc" secondAttribute="leading" id="4nF-gq-ZSf"/>
+                                    <constraint firstItem="FW7-en-RPc" firstAttribute="centerX" secondItem="8GC-Y5-VxT" secondAttribute="centerX" id="7fR-jj-jLO"/>
+                                    <constraint firstItem="GkG-HN-Mzm" firstAttribute="top" secondItem="FW7-en-RPc" secondAttribute="bottom" id="9cm-nA-k7F"/>
+                                    <constraint firstItem="GkG-HN-Mzm" firstAttribute="centerX" secondItem="FW7-en-RPc" secondAttribute="centerX" id="Dxf-if-bGD"/>
+                                    <constraint firstItem="FW7-en-RPc" firstAttribute="leading" secondItem="N0M-tL-FBC" secondAttribute="leading" constant="30" id="EeQ-Or-ePv"/>
+                                    <constraint firstItem="FW7-en-RPc" firstAttribute="top" secondItem="8GC-Y5-VxT" secondAttribute="bottom" constant="10" id="KaG-aQ-bDV"/>
+                                    <constraint firstItem="8GC-Y5-VxT" firstAttribute="centerX" secondItem="N0M-tL-FBC" secondAttribute="centerX" id="Pch-o2-qP1"/>
+                                    <constraint firstAttribute="bottom" secondItem="GkG-HN-Mzm" secondAttribute="bottom" id="VYG-hT-egd"/>
+                                    <constraint firstItem="8GC-Y5-VxT" firstAttribute="top" secondItem="N0M-tL-FBC" secondAttribute="top" id="W7C-ZW-viA"/>
+                                    <constraint firstItem="FW7-en-RPc" firstAttribute="centerX" secondItem="N0M-tL-FBC" secondAttribute="centerX" id="YUD-f1-7VA"/>
+                                    <constraint firstItem="GkG-HN-Mzm" firstAttribute="trailing" secondItem="FW7-en-RPc" secondAttribute="trailing" id="p3g-IC-MQi"/>
+                                    <constraint firstAttribute="trailing" secondItem="FW7-en-RPc" secondAttribute="trailing" constant="30" id="pci-LZ-h3P"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-nW-U9E">
+                                <color key="backgroundColor" red="0.93333333730697632" green="0.14117647707462311" blue="0.25490197539329529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eub-oT-ABQ"/>
+                                </constraints>
+                                <state key="normal" title="分享">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButton:" destination="fVS-qL-0Ta" eventType="touchUpInside" id="brP-cg-Jcg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0VL-Hh-lNU" firstAttribute="top" secondItem="9CJ-nW-U9E" secondAttribute="bottom" constant="25" id="9WE-pc-SIY"/>
+                            <constraint firstItem="9CJ-nW-U9E" firstAttribute="leading" secondItem="vMB-y2-POh" secondAttribute="leading" constant="30" id="Apt-1F-xGe"/>
+                            <constraint firstItem="N0M-tL-FBC" firstAttribute="leading" secondItem="vMB-y2-POh" secondAttribute="leading" id="BOZ-Sz-Tal"/>
+                            <constraint firstAttribute="trailing" secondItem="9CJ-nW-U9E" secondAttribute="trailing" constant="30" id="QQk-FR-b1B"/>
+                            <constraint firstItem="N0M-tL-FBC" firstAttribute="top" secondItem="fYX-RC-bdI" secondAttribute="bottom" constant="10" id="aFK-vX-Xrl"/>
+                            <constraint firstAttribute="trailing" secondItem="N0M-tL-FBC" secondAttribute="trailing" id="qaL-BT-wwS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="分享充电点" id="bCw-M5-DuS"/>
+                    <connections>
+                        <outlet property="mapView" destination="FW7-en-RPc" id="xLd-YR-DrK"/>
+                        <outlet property="starView" destination="FTY-nh-4Jr" id="ulY-EP-bmE"/>
+                        <outlet property="stationAddressLabel" destination="fUf-Nr-qo0" id="TJu-Hz-NKQ"/>
+                        <outlet property="stationImageView" destination="syg-u0-Yd9" id="T13-fm-1V4"/>
+                        <outlet property="stationNameLabel" destination="JJF-FT-TTM" id="zGf-uF-E69"/>
+                        <outlet property="stationTypeLabel" destination="VBa-HT-wos" id="lxZ-Hc-ihV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKQ-UY-gga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="382"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default_pile_image_short" width="200" height="189"/>
+        <image name="share_logo" width="128" height="128"/>
+    </resources>
+</document>

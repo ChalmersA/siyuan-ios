@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="KGk-i7-Jjw" customClass="DCOrderDetailItemInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-ob-HPs">
+                        <rect key="frame" x="15" y="6" width="78" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="BC1-lF-zze"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-Mk-HgW">
+                        <rect key="frame" x="103" y="6" width="202" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="Rbh-bO-PfA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y1j-xt-9IN" customClass="FiveStarsView" customModule="Charging" customModuleProvider="target">
+                        <rect key="frame" x="205" y="0.0" width="100" height="43.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="ivF-UI-gQu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bvT-Mk-HgW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="D7F-Jb-rbp"/>
+                    <constraint firstItem="0qf-ob-HPs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="DZW-2n-Yqv"/>
+                    <constraint firstAttribute="trailing" secondItem="Y1j-xt-9IN" secondAttribute="trailing" constant="15" id="G9V-ud-iiQ"/>
+                    <constraint firstItem="bvT-Mk-HgW" firstAttribute="top" secondItem="0qf-ob-HPs" secondAttribute="top" id="PRk-IB-CNW"/>
+                    <constraint firstAttribute="trailing" secondItem="bvT-Mk-HgW" secondAttribute="trailing" constant="15" id="aIz-ah-KgF"/>
+                    <constraint firstItem="Y1j-xt-9IN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mfX-uA-CWR"/>
+                    <constraint firstItem="bvT-Mk-HgW" firstAttribute="leading" secondItem="0qf-ob-HPs" secondAttribute="trailing" constant="10" id="xlA-Ym-5EX"/>
+                    <constraint firstAttribute="bottom" secondItem="Y1j-xt-9IN" secondAttribute="bottom" id="yTq-Pe-4Je"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemContentLabel" destination="bvT-Mk-HgW" id="WR1-JE-ay0"/>
+                <outlet property="itemTitleLabel" destination="0qf-ob-HPs" id="Xlg-ND-0d5"/>
+                <outlet property="starView" destination="Y1j-xt-9IN" id="FL1-T1-P9w"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
