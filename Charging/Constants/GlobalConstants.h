@@ -137,7 +137,8 @@ const static NSString *defaultType = @"其他";
 typedef void(^PayViewShowFinish)();
 
 #pragma mark - URLs
-#define SERVER_URL_RELEASE          @"http://210.13.73.251:3105/"    //正式
+#define SERVER_URL_RELEASE          @"http://api.yiweichong.com:3105/"    //正式
+//#define SERVER_URL_RELEASE          @"http://210.13.73.251:3105/"    //正式
 //#define SERVER_URL_DEV              @"http://120.26.236.231:6080/"  //测试
 #define SERVER_URL_DEV              @"http://120.26.236.231:8082/charge/"  //测试
 
